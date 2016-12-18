@@ -413,6 +413,14 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
+	var _SearchPage = __webpack_require__(183);
+
+	var _SearchPage2 = _interopRequireDefault(_SearchPage);
+
+	var _Header = __webpack_require__(185);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -421,7 +429,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var $ = __webpack_require__(183);
+	var $ = __webpack_require__(187);
 
 	var Application = function (_Component) {
 	  _inherits(Application, _Component);
@@ -432,19 +440,37 @@
 	    var _this = _possibleConstructorReturn(this, (Application.__proto__ || Object.getPrototypeOf(Application)).call(this));
 
 	    _this.state = {
-	      data: []
+	      result: '',
+	      movie: '',
+	      movieTitle: '',
+	      input: false
 	    };
 	    return _this;
 	  }
 
 	  _createClass(Application, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      $.get("https://api.themoviedb.org/3/search/movie?3b0cb67fa2d52569a7722e1614ea5df3={3b0cb67fa2d52569a7722e1614ea5df3}&query=Jack+Reacher").then(function (result) {
-	        this.setState({
-	          data: result
-	        });
+	    key: 'setMovieSearch',
+	    value: function setMovieSearch(value) {
+	      var _this2 = this;
+
+	      this.setState({
+	        movie: value
+	      }, function () {
+	        _this2.getMovieInfo();
 	      });
+	    }
+	  }, {
+	    key: 'getMovieInfo',
+	    value: function getMovieInfo() {
+	      var movie = this.state.movie;
+	      var movieformat = movie.replace(' ', '+');
+	      var url = this.props.url + movie;
+	      $.get(url, function (result) {
+	        this.setState({
+	          result: result.results,
+	          movieTitle: result.results[0].title
+	        });
+	      }.bind(this));
 	    }
 	  }, {
 	    key: 'render',
@@ -452,16 +478,17 @@
 	      return _react2.default.createElement(
 	        'section',
 	        null,
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Welcome to the Movie App'
-	        ),
+	        _react2.default.createElement(_Header2.default, null),
+	        _react2.default.createElement(_SearchPage2.default, { movie: this.state.movie, setMovieSearch: this.setMovieSearch.bind(this) }),
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          'Display Movie Info',
-	          this.state.title
+	          'Display Movie Info'
+	        ),
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          this.state.movieTitle
 	        )
 	      );
 	    }
@@ -472,7 +499,7 @@
 
 	;
 
-	_reactDom2.default.render(_react2.default.createElement(Application, null), document.getElementById('app'));
+	_react2.default.createElement(Application, { url: 'https://api.themoviedb.org/3/search/movie?api_key=3b0cb67fa2d52569a7722e1614ea5df3&query=' });
 
 	module.exports = Application;
 
@@ -21885,6 +21912,142 @@
 
 /***/ },
 /* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(6);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Search = __webpack_require__(184);
+
+	var _Search2 = _interopRequireDefault(_Search);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var SearchPage = function SearchPage(_ref) {
+	  var setMovieSearch = _ref.setMovieSearch;
+
+
+	  return _react2.default.createElement(
+	    'section',
+	    null,
+	    _react2.default.createElement(
+	      'h2',
+	      null,
+	      ' Search Movies '
+	    ),
+	    _react2.default.createElement(_Search2.default, { setMovieSearch: setMovieSearch })
+	  );
+	};
+
+	module.exports = SearchPage;
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(6);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Search = function (_Component) {
+	  _inherits(Search, _Component);
+
+	  function Search() {
+	    _classCallCheck(this, Search);
+
+	    return _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).apply(this, arguments));
+	  }
+
+	  _createClass(Search, [{
+	    key: "render",
+	    value: function render() {
+	      var _this2 = this;
+
+	      return _react2.default.createElement("input", { placeholder: "search", onChange: function onChange(e) {
+	          _this2.props.setMovieSearch(e.target.value);
+	        } });
+	    }
+	  }]);
+
+	  return Search;
+	}(_react.Component);
+
+	exports.default = Search;
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(6);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _SignIn = __webpack_require__(186);
+
+	var _SignIn2 = _interopRequireDefault(_SignIn);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Header = function Header() {
+	  return _react2.default.createElement(
+	    'header',
+	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Flix Finder '
+	    ),
+	    _react2.default.createElement(_SignIn2.default, null)
+	  );
+	};
+
+	module.exports = Header;
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(6);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var SignIn = function SignIn() {
+	  return _react2.default.createElement(
+	    'aside',
+	    null,
+	    'Sign In Input'
+	  );
+	};
+
+	module.exports = SignIn;
+
+/***/ },
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
