@@ -1,5 +1,14 @@
-$primary-text-color: blue;
+@import './reset.scss';
+@import './header.scss';
+@import './home.scss';
+@import './search.scss';
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
 
 body {
   color: $primary-text-color;
+  background-color: #121822;
+  font-family: 'Roboto', sans-serif;
 };

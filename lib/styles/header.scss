@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+header {
+  color: #EBEEF2;
+  box-shadow: 0 0 0 0 transparent;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+  font-size: 30px;
+  margin: 20px;
+  display: inline-block;
+}
+
+#sign-in {
+  display: inline-block;
+  float: right;
+  margin: 30px;
+}
