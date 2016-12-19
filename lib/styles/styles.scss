@@ -1,10 +1,11 @@
 @import './reset.scss';
 @import './header.scss';
 @import './home.scss';
-
+@import './search.scss';
+@import './variables.scss';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-$primary-text-color: #EBEEF2;
+
 
 body {
   color: $primary-text-color;
