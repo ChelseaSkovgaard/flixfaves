@@ -22,7 +22,16 @@
 }
 
 .movie-image {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 350px;
+}
+
+.search-result {
+  height: auto;
+  width: 250px;
+  background-color: #FFF;
   margin-left: 50px;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #121822;
 }
