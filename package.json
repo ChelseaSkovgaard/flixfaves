@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack",
-    "test": "mocha"
+    "test": "mocha --require test/helpers/setup.js"
   },
   "author": "Chelsea Skovgaard",
   "license": "ISC",
@@ -19,8 +19,10 @@
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.6.0",
     "firebase": "^3.6.4",
     "jquery": "^3.1.1",
+    "jsdom": "^9.9.1",
     "lodash": "^4.17.2",
     "mocha": "^3.2.0",
     "mocha-loader": "^1.0.0",
@@ -33,6 +35,7 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "sass-loader": "^4.1.0",
+    "sinon": "^1.17.6",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
