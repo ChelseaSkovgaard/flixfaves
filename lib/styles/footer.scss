@@ -1,0 +1,10 @@
+footer {
+  color: $primary-text-color;
+  box-shadow: 0 0 0 0 transparent;
+  background: rgba(255, 255, 255, 0.05);
+  height: 50px;
+  text-align: center;
+  article {
+    padding-top: 20px;
+  }
+}
