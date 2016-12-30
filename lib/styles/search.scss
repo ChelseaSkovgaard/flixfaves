@@ -1,12 +1,14 @@
 @import './variables.scss';
 
-
+.search-page{
+  background-color: $primary-light;
+}
 
 #search-movies {
   padding: 5px;
   background-color: transparent;
-  border: 2px solid #EBEEF2;
-  margin: 50px;
+  border: 2px solid $primary-dark;
+  margin: 50px 50px 30px 75px;
   font-size: 20px;
-  color: $primary-text-color;
+  color: $primary-dark;
 }

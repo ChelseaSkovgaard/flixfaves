@@ -3,7 +3,7 @@
 header {
   color: $primary-text-color;
   box-shadow: 0 0 0 0 transparent;
-  background: rgba(255, 255, 255, 0.05);
+  background: $primary-transparent;
 }
 
 h1 {
@@ -17,5 +17,5 @@ h1 {
   display: inline-block;
   float: right;
   margin: 30px;
-  
+
 }
