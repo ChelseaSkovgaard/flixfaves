@@ -25,3 +25,15 @@
   margin: 20px 100px;
   line-height: 1.2;
 }
+
+.close-detail-btn {
+  position: absolute;
+  right: 0;
+  margin-right: 125px;
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/x-out.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
