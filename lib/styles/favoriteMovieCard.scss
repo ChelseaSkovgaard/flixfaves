@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+article.favorite-movie-card {
+  background-color: $white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: $primary-dark;
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  margin: 20px 0px 20px 20px;
+  width: 350px;
+  vertical-align: top;
+}
+
+.favorite-image {
+  height: 150px;
+  width: 100px;
+}
+
+aside.favorite-details{
+  color: $primary-dark;
+  display: inline;
+}
+
+
+
+// .movie-image {
+//   height: 350px;
+//   width: 250px;
+// }
+//
+// .movie-title {
+//   font-size: 18px;
+//   margin: 20px;
+// }
+//
+// .movie-date {
+//   margin-bottom: 5px;
+//   margin-left: 20px;
+// }
+//
+// .movie-description {
+//   margin-left: 20px;
+//   margin-right: 20px;
+// }
+//
+// .favorite-btn {
+//   float: right;
+//   z-index: 10;
+//   position: absolute;
+//   height: 40px;
+//   width: 50px;
+//   background-image: url(../images/Outline-Heart.png);
+//   background-repeat: no-repeat;
+//   background-color: transparent;
+//   border: none;
+//   margin-top: 5px;
+//   margin-left: 5px;
+// }
+// .favorite-btn:hover {
+//   background-image: url(../images/Red-Heart.png);
+// }
+//
+// .favorite-btn.active {
+//   background-image: url(../images/Red-Heart.png);
+// }
