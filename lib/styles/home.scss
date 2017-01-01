@@ -39,8 +39,18 @@ h2 {
   font-style: bold;
 }
 
+#make-list-section {
+  text-align: center;
+}
+
+.intro-list-box {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  text-align: left;
+}
 .sub-heading{
-  margin: 50px 50px 20px 50px;
+  margin: 15px 50px 20px 50px;
   font-size: 20px;
 }
 
@@ -50,4 +60,25 @@ h2 {
 
 .browse-page{
   background-color: #E9E9E9;
+}
+
+.pic-intro {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  margin: auto;
+  margin-top: 30px;
+  background-repeat: no-repeat;
+}
+
+.reminder-pic {
+  background-image: url(../images/Reminder-SVG.svg);
+}
+
+.alarm-pic {
+  background-image: url(../images/Alarm.svg);
+}
+
+.theater-pic {
+  background-image: url(../images/Theater.svg);
 }

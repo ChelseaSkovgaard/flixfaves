@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+.favorite-movie-card-container {
+  display: inline-block;
+}
+
 article.favorite-movie-card {
   background-color: $white;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -7,7 +11,7 @@ article.favorite-movie-card {
   display: flex;
   flex-wrap: wrap;
   height: 150px;
-  margin: 20px 0px 20px 20px;
+  margin: 20px;
   width: 350px;
   vertical-align: top;
 }
@@ -22,6 +26,14 @@ aside.favorite-details{
   display: inline;
 }
 
+.favorite-title {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.favorite-date {
+  margin: 5px;
+}
 
 
 // .movie-image {

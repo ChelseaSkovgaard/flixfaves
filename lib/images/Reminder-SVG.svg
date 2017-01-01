@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="39px" viewBox="0 0 35 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_assignment_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_assignment_24px" transform="translate(-5.000000, -3.000000)">
+            <g id="Icon-24px">
+                <path d="M35.625,7.5 L27.7875,7.5 C27,5.325 24.9375,3.75 22.5,3.75 C20.0625,3.75 18,5.325 17.2125,7.5 L9.375,7.5 C7.3125,7.5 5.625,9.1875 5.625,11.25 L5.625,37.5 C5.625,39.5625 7.3125,41.25 9.375,41.25 L35.625,41.25 C37.6875,41.25 39.375,39.5625 39.375,37.5 L39.375,11.25 C39.375,9.1875 37.6875,7.5 35.625,7.5 L35.625,7.5 Z M22.5,7.5 C23.53125,7.5 24.375,8.34375 24.375,9.375 C24.375,10.40625 23.53125,11.25 22.5,11.25 C21.46875,11.25 20.625,10.40625 20.625,9.375 C20.625,8.34375 21.46875,7.5 22.5,7.5 L22.5,7.5 Z M26.25,33.75 L13.125,33.75 L13.125,30 L26.25,30 L26.25,33.75 L26.25,33.75 Z M31.875,26.25 L13.125,26.25 L13.125,22.5 L31.875,22.5 L31.875,26.25 L31.875,26.25 Z M31.875,18.75 L13.125,18.75 L13.125,15 L31.875,15 L31.875,18.75 L31.875,18.75 Z" id="Shape" fill="#EBEEF2"></path>
+                <polygon id="Shape" points="0 0 45 0 45 45 0 45"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
