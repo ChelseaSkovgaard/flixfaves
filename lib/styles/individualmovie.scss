@@ -6,7 +6,7 @@
   color: $primary-dark;
   display: inline-block;
   height: 525px;
-  margin: 50px 0px 30px 75px;
+  margin: 50px 0px 30px 115px;
   width: 250px;
   vertical-align: top;
 }
@@ -18,7 +18,7 @@
 
 .movie-title {
   font-size: 18px;
-  margin: 20px;
+  margin: 16px 20px 12px;
 }
 
 .movie-date {
@@ -59,4 +59,5 @@
   border: none;
   background-color: inherit;
   color: crimson;
+  padding: 0;
 }

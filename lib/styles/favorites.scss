@@ -1,4 +1,20 @@
 #favorite-movies-page{
   background-color: $primary-light;
   color: $primary-dark;
+  padding-top: 50px;
+}
+
+h4.movie-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.fav-page-link {
+  border: $primary-dark 2px solid;
+  padding: 5px;
+  text-decoration: none;
+  color: $primary-dark;
+  margin: 20px;
+  font-size: 16px;
 }
