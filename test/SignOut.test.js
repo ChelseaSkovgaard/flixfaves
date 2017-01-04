@@ -10,17 +10,10 @@ describe('SignOut', () => {
     const wrapper = shallow(<SignOut />)
   })
 
-  it.skip('should have a button', function(){
+  it('should render as an aside', function(){
     const user = user
     const wrapper = render(<SignOut user={user}/>)
-    assert.equal(wrapper.find('button').length, 1)
+    assert.equal(wrapper.find('aside').length, 1)
   });
 
-  it.skip('should sign into the app on button click', ()=>{
-    const user = user
-    let signOut = sinon.spy();
-    const wrapper = mount(<SignOut user={user}/>);
-    wrapper.find('#sign-out-btn').simulate('click');
-    expect(signOut).to.have.property('callCount', 1)
-  })
 })
