@@ -8,13 +8,31 @@ h4.movie-heading {
   font-size: 20px;
   font-weight: bold;
   margin: 20px;
+  background-color: $primary-dark;
+  color: $primary-light;
+  padding: 16px;
 }
 
 .fav-page-link {
-  border: $primary-dark 2px solid;
-  padding: 5px;
-  text-decoration: none;
-  color: $primary-dark;
-  margin: 20px;
+  background-color: $primary-dark;
+  border: $primary-light 2px solid;
+  border-radius: 5px;
+  color: $primary-light;
   font-size: 16px;
+  margin: 16px 20px 30px;
+  padding: 10px;
+  text-decoration: none;
+  &:hover {
+    background-color: $primary-light;
+    border: $primary-dark 3px solid;
+    color: $primary-dark;
+  }
+}
+
+.available-saved-movies {
+  margin: 20px;
+}
+
+#favorite-nav-links {
+  padding: 0 0 20px;
 }

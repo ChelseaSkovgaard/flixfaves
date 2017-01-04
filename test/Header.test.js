@@ -7,4 +7,10 @@ describe('Header', () => {
   it('can mount with no properties', () => {
     const wrapper = shallow(<Header />)
   })
+
+  it('renders as a <header>', () => {
+   const wrapper = shallow(<Header />)
+   assert.equal(wrapper.type(), 'header')
+ })
+
 })
