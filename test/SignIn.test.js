@@ -14,11 +14,5 @@ describe('SignIn', () => {
     const wrapper = render(<SignIn />)
     assert.equal(wrapper.find('button').length, 1)
   });
-
-  it.skip('should sign into the app on button click', ()=>{
-    let signIn = sinon.spy();
-    const wrapper = mount(<SignIn/>);
-    wrapper.find('#sign-in-btn').simulate('click');
-    expect(signIn).to.have.property('callCount', 1)
-  })
+  
 })

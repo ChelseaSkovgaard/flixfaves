@@ -7,4 +7,10 @@ describe('Footer', () => {
   it('can mount with no properties', () => {
     const wrapper = shallow(<Footer />)
   })
+
+  it('renders as a <footer>', () => {
+   const wrapper = shallow(<Footer />)
+   assert.equal(wrapper.type(), 'footer')
+ })
+
 })
