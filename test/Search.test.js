@@ -15,7 +15,7 @@ describe('Search', () => {
     assert.equal(wrapper.find('input').length, 1)
   });
 
-  it('call the set movie search function when changed', () =>{
+  it('can call the set movie search function when changed', () =>{
     let setMovieSearch = sinon.spy();
     const wrapper = mount(<Search setMovieSearch={setMovieSearch}/>);
     wrapper.find('input').simulate('change');

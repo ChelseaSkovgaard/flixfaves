@@ -15,17 +15,4 @@ describe('MovieDetail', () => {
    assert.equal(wrapper.type(), 'article')
  })
 
-  it.skip('can call componentWillMount', () => {
-    sinon.spy(MovieDetail.prototype, 'componentWillMount')
-    const wrapper = mount(<MovieDetail />)
-    assert.equal(MovieDetail.prototype.componentWillMount.calledOnce, true)
-  })
-
-  it.skip('should call the close detail function when the close button is clicked', () =>{
-    let resetMovieDetail = sinon.spy();
-    const wrapper = mount(<MovieDetail resetMovieDetail={resetMovieDetail}/>);
-    wrapper.find('.close-detail-btn').simulate('click');
-    expect(resetMovieDetail).to.have.property('callCount', 1);
-  });
-
 })

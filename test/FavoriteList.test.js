@@ -20,16 +20,4 @@ describe('FavoriteList', () => {
    expect(wrapper.state('upcomingMovies')).deep.equal([]);
   })
 
-  it.skip('can call componentWillMount', () => {
-    sinon.spy(FavoriteList.prototype, 'componentWillMount')
-    const wrapper = mount(<FavoriteList />)
-    assert.equal(FavoriteList.prototype.componentWillMount.calledOnce, true)
-  })
-
-  it.skip('can call componentDidMount', () => {
-    sinon.spy(FavoriteList.prototype, 'componentDidMount')
-    const wrapper = mount(<FavoriteList />)
-    assert.equal(FavoriteList.prototype.componentDidMount.calledOnce, true)
-  })
-
 })
