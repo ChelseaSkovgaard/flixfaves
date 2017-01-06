@@ -15,6 +15,16 @@
   vertical-align: top;
 }
 
+.favorite-movie-card-simple {
+  height: 200px;
+  background-color: $primary-dark;
+  color: $primary-light;
+  display: inline-block;
+  margin: 20px;
+  width: 150px;
+  vertical-align: top;
+}
+
 .favorite-image {
   height: 200px;
   width: 150px;
