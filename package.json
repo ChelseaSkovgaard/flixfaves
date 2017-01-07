@@ -1,7 +1,7 @@
 {
-  "name": "react-starter-kit",
+  "name": "FlixFaves",
   "version": "1.0.0",
-  "description": "React starter kit",
+  "description": "Application for searching and saving movies",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline",

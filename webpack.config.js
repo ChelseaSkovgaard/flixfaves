@@ -2,11 +2,12 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main: "./lib/index.js",
+    main: ['babel-polyfill', './lib/index.js'],
     test: "mocha!./test/index.js"
   },
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'public'),
+    publicPath: '/public/',
     filename: "[name].bundle.js"
   },
   module: {
