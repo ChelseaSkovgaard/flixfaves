@@ -5,7 +5,7 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   color: $primary-dark;
   display: inline-block;
-  height: 525px;
+  height: 550px;
   margin: 50px 0px 30px 115px;
   width: 250px;
   vertical-align: top;
@@ -32,25 +32,22 @@
 }
 
 .favorite-btn {
-  float: right;
-  z-index: 10;
-  position: absolute;
-  height: 40px;
-  width: 50px;
-  background-image: url(../images/Outline-Heart.png);
-  background-repeat: no-repeat;
-  background-color: transparent;
+  height: 30px;
+  width: 250px;
+  background-color: $primary-dark;
+  color: $primary-light;
   border: none;
-  margin-top: 5px;
-  margin-left: 5px;
-
+  font-size: 16px;
+  margin-top: -5px;
+  font-weight: bold;
 }
+
 .favorite-btn:hover {
-  background-image: url(../images/Red-Heart.png);
+  background-color: crimson;
 }
 
 .favorite-btn.active {
-  background-image: url(../images/Red-Heart.png);
+  background-color: crimson;
 }
 
 .more-btn {

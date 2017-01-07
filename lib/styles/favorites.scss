@@ -1,12 +1,27 @@
 #favorite-movies-page{
   background-color: $primary-light;
   color: $primary-dark;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #all-movies-heading, #watched-movies-heading {
   font-size: 24px;
   margin: 30px 20px 20px;
+}
+
+#fav-not-signed-in {
+  margin: -10px 20px 40px;
+  font-size: 18px;
+}
+
+#not-signed-in {
+  margin: 20px;
+  font-size: 18px;
+}
+
+#watched-movies {
+  margin-bottom: 40px;
 }
 
 h4.movie-heading {
