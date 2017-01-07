@@ -79,3 +79,9 @@
     color: white;
   }
 }
+
+@media (max-width: 700px) {
+  .watched-movies-list {
+    margin: auto;
+  }
+}
