@@ -109,7 +109,7 @@ h2 {
   background-color: #E9E9E9;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 930px) {
   .home-page-link {
     width: 100%;
     margin: 10px 100px;
@@ -128,7 +128,7 @@ h2 {
   .sign-on-container {
     position:absolute;
     left: 0;
-    margin-top: -60px;
     margin-left: 16px;
+    margin-top: -100px;
   }
 }

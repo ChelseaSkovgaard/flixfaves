@@ -30,8 +30,17 @@ nav {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 930px) {
+  header {
+    height: 250px;
+  }
   h1 {
-    margin-bottom: 65px;
+    margin-bottom: 75px;
+  }
+  nav {
+  position:absolute;
+  left: 0;
+  margin-top: 75px;
+  margin-left: 16px;
   }
 }
