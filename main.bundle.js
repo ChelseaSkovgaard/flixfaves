@@ -30036,6 +30036,29 @@
 	        null,
 	        'FLIX FAVES'
 	      )
+	    ),
+	    _react2.default.createElement(
+	      'nav',
+	      { id: 'dropdown-nav' },
+	      _react2.default.createElement(
+	        'div',
+	        { 'class': 'dropdown-content' },
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { className: 'dropdown-link', to: '/search' },
+	          'Search'
+	        ),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { className: 'dropdown-link', to: '/browseupcoming' },
+	          'Upcoming'
+	        ),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { className: 'dropdown-link', to: '/browsecurrent' },
+	          'Current'
+	        )
+	      )
 	    )
 	  );
 	};
@@ -34801,7 +34824,7 @@
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { className: 'favorite-page-link', to: '/favorites' },
-	            'My Movies'
+	            'MY MOVIES'
 	          ),
 	          _react2.default.createElement(
 	            'button',
@@ -78523,7 +78546,6 @@
 	        notSignedInMessage = '';
 	      }
 
-	      var moviesWatched = this.state.moviesWatched;
 	      var moviesWatchedDisplay = _react2.default.createElement(
 	        'section',
 	        { className: 'favorites-list' },

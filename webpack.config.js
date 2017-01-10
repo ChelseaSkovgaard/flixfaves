@@ -6,8 +6,7 @@ module.exports = {
     test: "mocha!./test/index.js"
   },
   output: {
-    path: path.join(__dirname, 'public'),
-    publicPath: '/public/',
+    path: __dirname,
     filename: "[name].bundle.js"
   },
   module: {

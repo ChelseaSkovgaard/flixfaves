@@ -7,10 +7,27 @@ header {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 20px;
   display: inline-block;
   color: $primary-text-color;
+}
+
+nav {
+  display: inline-block;
+}
+
+.navigation-link {
+  display: inline-block;
+  text-decoration: none;
+  color: $primary-light;
+  border: solid 2px $primary-light;
+  padding: 5px;
+  margin: 10px;
+  font-size: 16px;
+  &:hover {
+    background-color: black;
+  }
 }
 
 @media (max-width: 700px) {
