@@ -10,11 +10,10 @@ The application is built with React, Javascript, and Sass. Webpack is used to or
 ###To Use The App
 Visit https://flixfavs.firebaseapp.com/
 
-## Project Screen Shot(s)
+## Screen Shot: Home Page
 
-[ PRETEND SCREEN SHOT IS HERE ]
 
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+
 
 ## Installation and Setup Instructions
 
