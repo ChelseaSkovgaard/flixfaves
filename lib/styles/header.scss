@@ -7,14 +7,40 @@ header {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 20px;
   display: inline-block;
   color: $primary-text-color;
 }
 
-@media (max-width: 700px) {
+nav {
+  display: inline-block;
+}
+
+.navigation-link {
+  display: inline-block;
+  text-decoration: none;
+  color: $primary-light;
+  border: solid 2px $primary-light;
+  padding: 5px;
+  margin: 10px;
+  font-size: 16px;
+  &:hover {
+    background-color: black;
+  }
+}
+
+@media (max-width: 930px) {
+  header {
+    height: 250px;
+  }
   h1 {
-    margin-bottom: 65px;
+    margin-bottom: 75px;
+  }
+  nav {
+  position:absolute;
+  left: 0;
+  margin-top: 75px;
+  margin-left: 16px;
   }
 }

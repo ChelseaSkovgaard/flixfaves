@@ -4,7 +4,7 @@
   "description": "Application for searching and saving movies",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
+    "start": "webpack-dev-server --hot --inline --history-api-fallback",
     "build": "webpack",
     "test": "mocha --require test/helpers/setup.js"
   },

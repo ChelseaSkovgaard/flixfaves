@@ -58,3 +58,9 @@
   color: crimson;
   padding: 0;
 }
+
+@media (max-width: 700px) {
+  .individual-movie {
+    margin: 10px 175px 10px 100px;
+  }
+}
