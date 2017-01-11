@@ -9,3 +9,22 @@ The application is built with React, Javascript, and Sass. Webpack is used to or
 
 ###To Use The App
 Visit https://flixfavs.firebaseapp.com/
+
+## Project Screen Shot(s)
+
+[ PRETEND SCREEN SHOT IS HERE ]
+
+[ PRETEND OTHER SCREEN SHOT IS HERE ]
+
+## Installation and Setup Instructions
+
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+
+Installation: `npm install`  
+
+To Run Test Suite:  `npm test`  
+
+To Start Server: `npm start`  
+
+To Visit App: `localhost:8080`  
+ 
