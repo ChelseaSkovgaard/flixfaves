@@ -30,6 +30,10 @@ nav {
   }
 }
 
+#drop-btn {
+  display: none;
+}
+
 @media (max-width: 930px) {
   header {
     height: 250px;
@@ -37,10 +41,12 @@ nav {
   h1 {
     margin-bottom: 75px;
   }
-  nav {
-  position:absolute;
-  left: 0;
-  margin-top: 75px;
-  margin-left: 16px;
+
+  #drop-btn {
+    display: block;
+  }
+
+  .navigation-content {
+    display: none;
   }
 }
