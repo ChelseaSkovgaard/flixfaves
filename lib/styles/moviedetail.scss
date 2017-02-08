@@ -7,9 +7,9 @@
   justify-content: center;
 }
 
-.detail-title {
-  font-size: 22px;
-  margin: 20px;
+.detail-overview {
+  margin: 20px 100px;
+  line-height: 1.2;
 }
 
 .detail-tagline {
@@ -17,14 +17,14 @@
   margin-left: 20px;
 }
 
-.detail-date, .detail-rating{
+.detail-title {
+  font-size: 22px;
+}
+
+.detail-date, .detail-rating, .detail-title{
   margin: 20px;
 }
 
-.detail-overview {
-  margin: 20px 100px;
-  line-height: 1.2;
-}
 
 .close-detail-btn {
   position: absolute;

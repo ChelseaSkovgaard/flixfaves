@@ -4,6 +4,7 @@ header {
   color: $primary-text-color;
   box-shadow: 0 0 0 0 transparent;
   background: $primary-transparent;
+  height: 80px;
 }
 
 h1 {
@@ -11,10 +12,16 @@ h1 {
   margin: 20px;
   display: inline-block;
   color: $primary-text-color;
+  position: absolute;
 }
 
 nav {
   display: inline-block;
+}
+
+.dropdown {
+  margin-left: 350px;
+  margin-top: 10px;
 }
 
 .navigation-link {
@@ -30,17 +37,55 @@ nav {
   }
 }
 
+.drop-btn {
+  display: none;
+}
+
 @media (max-width: 930px) {
   header {
-    height: 250px;
+    height: 150px;
   }
+
   h1 {
     margin-bottom: 75px;
   }
-  nav {
-  position:absolute;
-  left: 0;
-  margin-top: 75px;
-  margin-left: 16px;
+
+  .drop-btn {
+    display: block;
+    background-color: transparent;
+    text-decoration: none;
+    color: $primary-light;
+    border: solid 2px $primary-light;
+    padding: 5px;
+    font-size: 16px;
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 25px;
+  }
+
+  .navigation-content {
+    display: none;
+  }
+
+  .dropdown:hover .navigation-content{
+    display: block;
+  }
+
+  .navigation-link {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    height: 160px;
   }
 }
